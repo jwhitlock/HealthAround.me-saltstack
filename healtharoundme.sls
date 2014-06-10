@@ -63,6 +63,9 @@ pg_user-{{username}}:
         - runas: postgres
 {% endfor %}
 
+gdal-bin:
+    pkg.installed
+
 ##### Frontend
 
 healtharoundme-frontend:
