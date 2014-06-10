@@ -63,8 +63,12 @@ pg_user-{{username}}:
         - runas: postgres
 {% endfor %}
 
-gdal-bin:
-    pkg.installed
+shapeimporterpkgs:
+    pkg.installed:
+        pkgs:
+            - gdal-bin
+            - zip
+            - unzip
 
 ##### Frontend
 
